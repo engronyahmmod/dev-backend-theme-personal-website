@@ -16,7 +16,6 @@ import {
   CustomButton,
 } from "./HomepageStyles";
 import Carousel from "../components/Carousel";
-import Footer from "../components/Footer";
 
 function Homepage() {
   return (
@@ -406,9 +405,6 @@ function Homepage() {
         </Typography>
       </Box>
       {/* ------ end banner 3 */}
-
-      {/* Footer */}
-      <Footer />
     </Box>
   );
 }
