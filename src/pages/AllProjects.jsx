@@ -10,26 +10,15 @@ import {
 import { ReactComponent as RightThinArrLogo } from "../assets/images/right-thin-arr-icon.svg";
 import ResturantAppImageURL from "../assets/images/resturant-app.jpg";
 import RealstateAppImageURL from "../assets/images/real-state-app.jpg";
+import PageTitle from "../components/PageTitle";
 
 function AllProjects() {
   return (
     <Box>
-      <Box sx={{ display: "flex", alignItems: "center", mt: "32px" }}>
-        <Typography
-          variant="h2"
-          sx={{
-            fontWeight: 400,
-            fontSize: "34px",
-            lineHeight: "39.8px",
-            letterSpacing: "0.0025em",
-            color: "#D7B6A0",
-            mr: 1,
-          }}
-        >
-          Lets follow my stylish projects
-        </Typography>
-        <RightThinArrLogo />
-      </Box>
+      <PageTitle
+        title="Lets follow my stylish projects"
+        SVGIcon={<RightThinArrLogo />}
+      />
       <Grid container spacing={2} sx={{ mt: 3 }}>
         <Grid item xs={4}>
           {/* Item-1 */}

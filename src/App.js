@@ -7,10 +7,18 @@ import AllProjects from "./pages/AllProjects";
 import Platforms from "./pages/Platforms";
 import { Reviews } from "@mui/icons-material";
 import Hire from "./pages/Hire";
+import { Alert } from "@mui/material";
 
 function App() {
   return (
     <Router>
+      <Alert
+        severity="warning"
+        sx={{ display: "flex", justifyContent: "center" }}
+      >
+        This site is under development work. Some of functionalities may not be
+        work properly. [ADMIN]
+      </Alert>
       <Navbar />
       <LayoutWraper>
         <Routes>
