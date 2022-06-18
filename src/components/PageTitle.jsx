@@ -2,9 +2,12 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { ReactComponent as RightThinArrLogo } from "../assets/images/right-thin-arr-icon.svg";
 
-const PageTitle = ({ title, SVGIcon }) => {
+const PageTitle = ({ title, SVGIcon, ...otherProps }) => {
   return (
-    <Box sx={{ display: "flex", alignItems: "center", mt: "32px" }}>
+    <Box
+      sx={{ display: "flex", alignItems: "center", my: "32px" }}
+      {...otherProps}
+    >
       <Typography
         variant="h2"
         sx={{
