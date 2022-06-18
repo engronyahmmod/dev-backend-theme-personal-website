@@ -1,8 +1,10 @@
 import React from "react";
 import { Box, Container } from "@mui/material";
 import { MenuItem } from "./NavbarStyles";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
   return (
     <Box
       sx={{
@@ -32,11 +34,13 @@ function Navbar() {
         </div>
 
         <Box sx={{ display: "flex", gap: "19px" }}>
-          <MenuItem>HOME</MenuItem>
-          <MenuItem>ALL PROJECTS</MenuItem>
-          <MenuItem>PLATFORMS</MenuItem>
-          <MenuItem>REVIEWS</MenuItem>
-          <MenuItem>HIRE</MenuItem>
+          <MenuItem onClick={() => navigate("/")}>HOME</MenuItem>
+          <MenuItem onClick={() => navigate("/allprojects")}>
+            ALL PROJECTS
+          </MenuItem>
+          <MenuItem onClick={() => navigate("/platforms")}>PLATFORMS</MenuItem>
+          <MenuItem onClick={() => navigate("/reviews")}>REVIEWS</MenuItem>
+          <MenuItem onClick={() => navigate("/hire")}>HIRE</MenuItem>
         </Box>
       </Container>
     </Box>

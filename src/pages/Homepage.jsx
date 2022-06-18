@@ -16,8 +16,10 @@ import {
   CustomButton,
 } from "./HomepageStyles";
 import Carousel from "../components/Carousel";
+import { useNavigate } from "react-router-dom";
 
 function Homepage() {
+  const navigate = useNavigate();
   return (
     <Box>
       {/* Banner */}
@@ -27,7 +29,7 @@ function Homepage() {
             I am manage variety of modern enterprise software projects on behalf
             of clients.
           </BannerTitle>
-          <BannerButton>Hire Me</BannerButton>
+          <BannerButton onClick={() => navigate("/hire")}>Hire Me</BannerButton>
         </BannerContent>
       </Banner>
 
@@ -348,7 +350,9 @@ function Homepage() {
         >
           Work hard, successfull client products{" "}
         </Typography>
-        <CustomButton>All Projects</CustomButton>
+        <CustomButton onClick={() => navigate("/allprojects")}>
+          All Projects
+        </CustomButton>
       </Box>
       {/* -------- small banner end-------- */}
 
