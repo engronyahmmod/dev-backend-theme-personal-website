@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AllProjects from "./pages/AllProjects";
 import Platforms from "./pages/Platforms";
-import { Reviews } from "@mui/icons-material";
+import Reviews from "./pages/Reviews";
 import Hire from "./pages/Hire";
 import { Alert } from "@mui/material";
 
