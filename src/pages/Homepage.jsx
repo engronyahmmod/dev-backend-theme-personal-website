@@ -2,6 +2,7 @@ import React from "react";
 import { Avatar, Box, Typography } from "@mui/material";
 import { ReactComponent as AppleLogo } from "../assets/images/apple.svg";
 import { ReactComponent as IbmLogo } from "../assets/images/ibm.svg";
+import { ReactComponent as ShopifyLogo } from "../assets/images/shopify.svg";
 import { ReactComponent as MailLogo } from "../assets/images/mail-icon.svg";
 import WebDevImageUrl from "../assets/images/web-dev.jpg";
 import MobileDevImageUrl from "../assets/images/mobile-dev.jpg";
@@ -50,7 +51,7 @@ function Homepage() {
           <IbmLogo /> <span>ibm</span>
         </LogoContainer>
         <LogoContainer>
-          <AppleLogo /> <span>shopify</span>
+          <ShopifyLogo /> <span>shopify</span>
         </LogoContainer>
       </Box>
 
