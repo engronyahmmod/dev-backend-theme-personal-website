@@ -29,9 +29,15 @@ function Footer() {
             width: "180px",
           }}
         >
-          <FbLogo />
-          <TwitterLogo />
-          <GithubLogo />
+          <a href="https://www.facebook.com/rony.ahmmod.9/" target="_blank">
+            <FbLogo />
+          </a>
+          <a href="https://twitter.com/MDRONYAHMMOD" target="_blank">
+            <TwitterLogo />
+          </a>
+          <a href="https://github.com/ronyahmmod" target="_blank">
+            <GithubLogo />
+          </a>
         </Box>
 
         <Typography

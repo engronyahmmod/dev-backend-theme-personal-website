@@ -1,8 +1,19 @@
 import React from "react";
 import { Box, Button, TextField } from "@mui/material";
 import PageTitle from "../components/PageTitle";
+import { useFormik } from "formik";
 
 function Hire() {
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      description: "",
+    },
+    onSubmit: (values) => {
+      alert(JSON.stringify(values, null, 2));
+    },
+  });
   return (
     <Box>
       <PageTitle title="Hire me" />
@@ -15,12 +26,15 @@ function Hire() {
         }}
         component="form"
         autoComplete="off"
+        onSubmit={formik.handleSubmit}
       >
         <TextField
           name="name"
           label="Name"
           placeholder="Place your name here."
           required
+          onChange={formik.handleChange}
+          value={formik.values.name}
         />
         <TextField
           name="email"
@@ -28,6 +42,8 @@ function Hire() {
           type="email"
           placeholder="xxxxxxxxx@xxxx.xxx"
           required
+          onChange={formik.handleChange}
+          value={formik.values.email}
         />
         <TextField
           name="description"
@@ -36,33 +52,36 @@ function Hire() {
           rows={4}
           required
           placeholder="xxxxxxxxx"
+          onChange={formik.handleChange}
+          value={formik.values.description}
         />
-      </Box>
-      <Box
-        sx={{
-          mt: 2,
-          display: "flex",
-          justifyContent: "flex-end",
-          maxWidth: "600px",
-          gap: "10px",
-        }}
-      >
-        <Button
-          variant="contained"
+        <Box
           sx={{
-            backgroundColor: "#CBA4A4",
-            color: "#FFF0F0",
-            "&:hover": {
-              color: "#CBA4A4",
-              backgroundColor: "#FFF0F0",
-            },
+            mt: 2,
+            display: "flex",
+            justifyContent: "flex-end",
+            maxWidth: "600px",
+            gap: "10px",
           }}
         >
-          Submit
-        </Button>
-        <Button variant="contained" color="error">
-          Cancle
-        </Button>
+          <Button
+            variant="contained"
+            type="submit"
+            sx={{
+              backgroundColor: "#CBA4A4",
+              color: "#FFF0F0",
+              "&:hover": {
+                color: "#CBA4A4",
+                backgroundColor: "#FFF0F0",
+              },
+            }}
+          >
+            Submit
+          </Button>
+          <Button variant="contained" color="error">
+            Cancle
+          </Button>
+        </Box>
       </Box>
     </Box>
   );

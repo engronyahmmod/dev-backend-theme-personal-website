@@ -28,7 +28,9 @@ function Navbar() {
             lineHeight: "40px",
             letterSpacing: "0.0025em",
             color: "#FFE9DA",
+            cursor: "pointer",
           }}
+          onClick={() => navigate("/")}
         >
           RONY AHMMOD
         </div>
