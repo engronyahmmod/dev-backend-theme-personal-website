@@ -4,12 +4,30 @@ import StarBorderPurple500RoundedIcon from "@mui/icons-material/StarBorderPurple
 
 const Review = ({ imageURL, alt, name, rating, review }) => {
   return (
-    <Box sx={{ display: "flex", my: "32px", gap: "60px" }}>
-      <Box>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: { xs: "column", md: "row" },
+        my: { xs: 0, md: "32px" },
+        px: { xs: 2, md: 0 },
+        py: { xs: 2, md: 0 },
+        gap: { xs: "20px", md: "60px" },
+      }}
+    >
+      <Box
+        sx={
+          {
+            // alignSelf: { xs: "center", md: "flex-start" }
+          }
+        }
+      >
         <Avatar
           src={imageURL}
           alt={alt}
-          sx={{ height: "183px", width: "177px" }}
+          sx={{
+            height: "183px",
+            width: "177px",
+          }}
         />
       </Box>
       <Box sx={{ display: "flex", flexDirection: "column" }}>

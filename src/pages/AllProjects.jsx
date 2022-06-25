@@ -19,15 +19,31 @@ function AllProjects() {
         title="Lets follow my stylish projects"
         SVGIcon={<RightThinArrLogo />}
       />
-      <Grid container spacing={2} sx={{ mt: 3 }}>
+      <Grid
+        container
+        spacing={{ xs: 0, md: 2 }}
+        sx={{ mt: 3, p: { xs: 0, md: 1 } }}
+        columns={{ xs: 4, sm: 8, md: 12 }}
+      >
         <Grid item xs={4}>
           {/* Item-1 */}
-          <Card sx={{ maxWidth: 345 }}>
+          <Card
+            sx={{
+              maxWidth: { xs: "auto", md: 345 },
+              boxShadow: { xs: "none", md: 1 },
+            }}
+          >
             <CardMedia
               component="img"
               height="140"
               image={ResturantAppImageURL}
               alt="Beautiful Resturant Apll"
+              sx={{
+                borderRadius: { xs: "0", md: 1 },
+                "& .MuiCardMedia-img": {
+                  borderRadius: { xs: 0, md: 1 },
+                },
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h6" component="div">
@@ -57,12 +73,23 @@ function AllProjects() {
 
         <Grid item xs={4}>
           {/* Item-2 */}
-          <Card sx={{ maxWidth: 345 }}>
+          <Card
+            sx={{
+              maxWidth: { xs: "auto", md: 345 },
+              boxShadow: { xs: "none", md: 1 },
+            }}
+          >
             <CardMedia
               component="img"
               height="140"
               image={RealstateAppImageURL}
               alt="Realstate app"
+              sx={{
+                borderRadius: { xs: "0", md: 1 },
+                "& .MuiCardMedia-img": {
+                  borderRadius: { xs: 0, md: 1 },
+                },
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h6" component="div">
@@ -91,12 +118,23 @@ function AllProjects() {
         </Grid>
         <Grid item xs={4}>
           {/* Item-3 */}
-          <Card sx={{ maxWidth: 345 }}>
+          <Card
+            sx={{
+              maxWidth: { xs: "auto", md: 345 },
+              boxShadow: { xs: "none", md: 1 },
+            }}
+          >
             <CardMedia
               component="img"
               height="140"
               image={ResturantAppImageURL}
               alt="Beautiful Resturant Apll"
+              sx={{
+                borderRadius: { xs: "0", md: 1 },
+                "& .MuiCardMedia-img": {
+                  borderRadius: { xs: 0, md: 1 },
+                },
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h6" component="div">
@@ -125,12 +163,23 @@ function AllProjects() {
         </Grid>
         <Grid item xs={4}>
           {/* Item-4 */}
-          <Card sx={{ maxWidth: 345 }}>
+          <Card
+            sx={{
+              maxWidth: { xs: "auto", md: 345 },
+              boxShadow: { xs: "none", md: 1 },
+            }}
+          >
             <CardMedia
               component="img"
               height="140"
               image={ResturantAppImageURL}
               alt="Beautiful Resturant Apll"
+              sx={{
+                borderRadius: { xs: "0", md: 1 },
+                "& .MuiCardMedia-img": {
+                  borderRadius: { xs: 0, md: 1 },
+                },
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h6" component="div">
@@ -159,12 +208,23 @@ function AllProjects() {
         </Grid>
         <Grid item xs={4}>
           {/* Item-5 */}
-          <Card sx={{ maxWidth: 345 }}>
+          <Card
+            sx={{
+              maxWidth: { xs: "auto", md: 345 },
+              boxShadow: { xs: "none", md: 1 },
+            }}
+          >
             <CardMedia
               component="img"
               height="140"
               image={ResturantAppImageURL}
               alt="Beautiful Resturant Apll"
+              sx={{
+                borderRadius: { xs: "0", md: 1 },
+                "& .MuiCardMedia-img": {
+                  borderRadius: { xs: 0, md: 1 },
+                },
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h6" component="div">
@@ -193,12 +253,23 @@ function AllProjects() {
         </Grid>
         <Grid item xs={4}>
           {/* Item-6 */}
-          <Card sx={{ maxWidth: 345 }}>
+          <Card
+            sx={{
+              maxWidth: { xs: "auto", md: 345 },
+              boxShadow: { xs: "none", md: 1 },
+            }}
+          >
             <CardMedia
               component="img"
               height="140"
               image={ResturantAppImageURL}
               alt="Beautiful Resturant Apll"
+              sx={{
+                borderRadius: { xs: "0", md: 1 },
+                "& .MuiCardMedia-img": {
+                  borderRadius: { xs: 0, md: 1 },
+                },
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h6" component="div">
@@ -227,12 +298,23 @@ function AllProjects() {
         </Grid>
         <Grid item xs={4}>
           {/* Item-7 */}
-          <Card sx={{ maxWidth: 345 }}>
+          <Card
+            sx={{
+              maxWidth: { xs: "auto", md: 345 },
+              boxShadow: { xs: "none", md: 1 },
+            }}
+          >
             <CardMedia
               component="img"
               height="140"
               image={ResturantAppImageURL}
               alt="Beautiful Resturant Apll"
+              sx={{
+                borderRadius: { xs: "0", md: 1 },
+                "& .MuiCardMedia-img": {
+                  borderRadius: { xs: 0, md: 1 },
+                },
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h6" component="div">
@@ -261,12 +343,23 @@ function AllProjects() {
         </Grid>
         <Grid item xs={4}>
           {/* Item-8 */}
-          <Card sx={{ maxWidth: 345 }}>
+          <Card
+            sx={{
+              maxWidth: { xs: "auto", md: 345 },
+              boxShadow: { xs: "none", md: 1 },
+            }}
+          >
             <CardMedia
               component="img"
               height="140"
               image={ResturantAppImageURL}
               alt="Beautiful Resturant Apll"
+              sx={{
+                borderRadius: { xs: "0", md: 1 },
+                "& .MuiCardMedia-img": {
+                  borderRadius: { xs: 0, md: 1 },
+                },
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h6" component="div">
@@ -295,12 +388,23 @@ function AllProjects() {
         </Grid>
         <Grid item xs={4}>
           {/* Item-9 */}
-          <Card sx={{ maxWidth: 345 }}>
+          <Card
+            sx={{
+              maxWidth: { xs: "auto", md: 345 },
+              boxShadow: { xs: "none", md: 1 },
+            }}
+          >
             <CardMedia
               component="img"
               height="140"
               image={ResturantAppImageURL}
               alt="Beautiful Resturant Apll"
+              sx={{
+                borderRadius: { xs: "0", md: 1 },
+                "& .MuiCardMedia-img": {
+                  borderRadius: { xs: 0, md: 1 },
+                },
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h6" component="div">

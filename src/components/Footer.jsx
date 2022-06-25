@@ -11,7 +11,8 @@ function Footer() {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        my: "94px",
+        my: { xs: "0", md: "94px" },
+        mb: { xs: 2, md: 0 },
       }}
     >
       <Container
@@ -19,6 +20,7 @@ function Footer() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          flexDirection: { xs: "column", md: "row" },
         }}
       >
         <Box
@@ -27,6 +29,7 @@ function Footer() {
             alignItems: "center",
             justifyContent: "space-between",
             width: "180px",
+            padding: { xs: 2, md: 0 },
           }}
         >
           <a href="https://www.facebook.com/rony.ahmmod.9/" target="_blank">
@@ -48,6 +51,7 @@ function Footer() {
             fontSize: "12px",
             lineHeight: "14px",
             /* identical to box height */
+            textAlign: { xs: "center", md: "left" },
 
             letterSpacing: "0.015em",
 

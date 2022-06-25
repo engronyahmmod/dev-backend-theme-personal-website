@@ -13,6 +13,7 @@ const NextArrow = ({ className, style, onClick }) => {
       sx={{
         width: "auto",
         height: "auto",
+        display: { xs: "none" },
         // display: "inline-block",
         zIndex: 1000,
         "&::before": {
@@ -33,11 +34,18 @@ const PrevArrow = ({ className, style, onClick }) => {
       sx={{
         width: "auto",
         height: "auto",
+        display: { xs: "none", md: "block" },
         // display: "inline-block",
         zIndex: 1000,
       }}
     >
-      <LeftArrLogo style={{ width: "24px", height: "24px" }} />
+      <LeftArrLogo
+        style={{
+          width: "24px",
+          height: "24px",
+          "@media (max-width: 595px)": { display: "none" },
+        }}
+      />
     </Box>
   );
 };
@@ -61,6 +69,7 @@ export default class Carousel extends Component {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
+            padding: { xs: 1, md: 0 },
           }}
         >
           {/* Item 1 */}
@@ -74,6 +83,9 @@ export default class Carousel extends Component {
               fontSize: "16px",
               lineHeight: "19px",
               letterSpacing: "0.005em",
+              overflow: { xs: "hidden", md: "none" },
+              textOverflow: "ellipsis",
+              whiteSpace: { xs: "no-wrap", md: "none" },
             }}
           >
             “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet

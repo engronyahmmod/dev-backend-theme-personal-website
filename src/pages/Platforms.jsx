@@ -52,33 +52,56 @@ function Platforms() {
         sx={{
           mt: "40px",
           display: "flex",
-          gap: "80px",
+          backgroundColor: { xs: "#FFF0F0", md: "#FFF" },
+
+          // flexDirection: { xs: "column", md: "row" },
+          gap: { xs: "10px", md: "80px" },
+          px: { xs: 1, md: 0 },
+          py: { xs: 1, md: 0 },
+
           justifyContent: "space-between",
+          // justifyContent: { xs: "center", md: "space-between" },
+          alignItems: { xs: "center", md: "flex-start" },
         }}
       >
         <Avatar
           src={FirebaseLogo}
-          sx={{ height: "144px", width: "144px" }}
+          sx={{
+            height: { xs: "58px", md: "144px" },
+            width: { xs: "58px", md: "144px" },
+          }}
           alt="firebase logo"
         />
         <Avatar
           src={SassLogo}
-          sx={{ height: "144px", width: "144px" }}
+          sx={{
+            height: { xs: "58px", md: "144px" },
+            width: { xs: "58px", md: "144px" },
+          }}
           alt="sass logo"
         />
         <Avatar
           src={NextJsLogo}
-          sx={{ height: "144px", width: "144px" }}
+          sx={{
+            height: { xs: "58px", md: "144px" },
+            width: { xs: "58px", md: "144px" },
+          }}
           alt="nextjs logo"
         />
         <Avatar
           src={MUILogo}
-          sx={{ height: "144px", width: "144px" }}
+          sx={{
+            height: { xs: "58px", md: "144px" },
+            width: { xs: "58px", md: "144px" },
+          }}
           alt="mui logo"
         />
         <Avatar
           src={FigmaLogo}
-          sx={{ height: "144px", width: "144px" }}
+          sx={{
+            height: { xs: "58px", md: "144px" },
+            width: { xs: "58px", md: "144px" },
+          }}
           alt="figma logo"
         />
       </Box>

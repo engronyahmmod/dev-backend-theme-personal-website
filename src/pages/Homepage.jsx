@@ -40,8 +40,11 @@ function Homepage() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          gap: "95px",
-          marginTop: "32px",
+          gap: { xs: 1, md: "95px" },
+          marginTop: { xs: 0, md: "32px" },
+          px: { xs: 1 },
+          py: { xs: 2 },
+          backgroundColor: { xs: "#FFF0F0", md: "#ffffff" },
         }}
       >
         <LogoContainer>
@@ -56,14 +59,21 @@ function Homepage() {
       </Box>
 
       {/* My Acctivities */}
-      <Box sx={{ display: "flex", marginTop: "55px" }}>
+      <Box
+        sx={{
+          display: "flex",
+          marginTop: "55px",
+          flexDirection: { xs: "column", md: "row" },
+          gap: { xs: 2, md: 0 },
+        }}
+      >
         <Box
           sx={{
-            flexBasis: "40%",
+            flexBasis: { xs: "100%", md: "40%" },
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            alignItems: "flex-start",
+            alignItems: { xs: "center", md: "flex-start" },
           }}
         >
           {/* Left Side */}
@@ -77,6 +87,7 @@ function Homepage() {
               letterSpacing: "0.0025em",
               color: "#CBA4A4",
               mb: 2,
+              textAlign: "center",
             }}
           >
             What do I help?
@@ -88,6 +99,7 @@ function Homepage() {
               fontSize: "24px",
               lineHeight: "28px",
               color: "#D7B6A0",
+              textAlign: "center",
             }}
           >
             I will help you with finding a solution and solve your problem.
@@ -107,11 +119,11 @@ function Homepage() {
         </Box>
         <Box
           sx={{
-            flexBasis: "60%",
+            flexBasis: { xs: "100%", md: "60%" },
             backgroundColor: "#6D5C5C",
-            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-            borderRadius: "10px",
-            padding: "57px 72px",
+            boxShadow: { xs: "none", md: "0px 4px 4px rgba(0, 0, 0, 0.25)" },
+            borderRadius: { xs: 0, md: "10px" },
+            padding: { xs: "20px 10px", md: "57px 72px" },
           }}
         >
           {/* Right Side */}
@@ -130,7 +142,10 @@ function Homepage() {
                 {/* Avatar */}
                 <Avatar
                   src={WebDevImageUrl}
-                  sx={{ height: "120px", width: "120px" }}
+                  sx={{
+                    height: { xs: "80px", md: "120px" },
+                    width: { xs: "80px", md: "120px" },
+                  }}
                   alt="Web Dev"
                 />
               </Box>
@@ -179,7 +194,10 @@ function Homepage() {
                 {/* Avatar */}
                 <Avatar
                   src={MobileDevImageUrl}
-                  sx={{ height: "120px", width: "120px" }}
+                  sx={{
+                    height: { xs: "80px", md: "120px" },
+                    width: { xs: "80px", md: "120px" },
+                  }}
                   alt="Web Dev"
                 />
               </Box>
@@ -227,7 +245,10 @@ function Homepage() {
                 {/* Avatar */}
                 <Avatar
                   src={AppDevImageUrl}
-                  sx={{ height: "120px", width: "120px" }}
+                  sx={{
+                    height: { xs: "80px", md: "120px" },
+                    width: { xs: "80px", md: "120px" },
+                  }}
                   alt="Web Dev"
                 />
               </Box>
@@ -276,7 +297,10 @@ function Homepage() {
                 {/* Avatar */}
                 <Avatar
                   src={UxDegImageUrl}
-                  sx={{ height: "120px", width: "120px" }}
+                  sx={{
+                    height: { xs: "80px", md: "120px" },
+                    width: { xs: "80px", md: "120px" },
+                  }}
                   alt="Web Dev"
                 />
               </Box>
@@ -331,11 +355,13 @@ function Homepage() {
         sx={{
           display: "flex",
           alignItems: "center",
-          padding: "41px 50px",
-          backgroundColor: "#729AB1",
-          boxShadow: "2px 3.1px 22px rgba(0,0,0,.3)",
-          justifyContent: "space-between",
-          mt: "55px",
+          padding: { xs: 2, md: "41px 50px" },
+          backgroundColor: { xs: "#FFF0F0", md: "#729AB1" },
+          boxShadow: { xs: "none", md: "2px 3.1px 22px rgba(0,0,0,.3)" },
+          justifyContent: { xs: "center", md: "space-between" },
+          mt: { xs: 0, md: "55px" },
+          flexDirection: { xs: "column", md: "row" },
+          gap: { xs: 2, md: 0 },
         }}
       >
         <Typography
@@ -346,7 +372,8 @@ function Homepage() {
             fontSize: "34px",
             lineHeight: "40px",
             letterSpacing: "0.0025em",
-            color: "#FFE9DA",
+            color: { xs: "#6D5C5C", md: "#FFE9DA" },
+            textAlign: { xs: "center", md: "left" },
           }}
         >
           Work hard, successfull client products{" "}
@@ -390,9 +417,9 @@ function Homepage() {
       <Box
         sx={{
           background: "#FFF9E9",
-          boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-          borderRadius: "45px 0px 0px 0px",
-          padding: "40px 100px",
+          boxShadow: { xs: "none", md: "0px 4px 4px rgba(0, 0, 0, 0.25)" },
+          borderRadius: { xs: "none", md: "45px 0px 0px 0px" },
+          padding: { xs: "20px 50px", md: "40px 100px" },
           mt: "58px",
         }}
       >
@@ -400,8 +427,8 @@ function Homepage() {
           sx={{
             fontStyle: "normal",
             fontWeight: 400,
-            fontSize: "48px",
-            lineHeight: "56px",
+            fontSize: { xs: "24px", md: "48px" },
+            lineHeight: { xs: "28px", md: "56px" },
             textAlign: "center",
             color: "#D7B6A0",
           }}

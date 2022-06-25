@@ -7,3 +7,9 @@
 body {
   font-family:'Roboto', sans-serif;
 }
+
+@media (max-width: 595px) {
+.slick-arrow, .slick-next, .slick-prev svg {
+  display: none;
+}
+}

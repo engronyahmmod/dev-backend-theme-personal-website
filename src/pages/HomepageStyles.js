@@ -9,15 +9,30 @@ export const Banner = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 4px 1.6px 22px rgba(0, 0, 0, 0.3);
+  @media (max-width: 595px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    border-radius: 0;
+  }
 `;
 
 export const BannerTitle = styled.h1`
   width: 481px;
-
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 56px;
+
+  @media (max-width: 595px) {
+    font-size: 34px;
+    line-height: 39px;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+  }
 
   /* Gray-1 */
 
@@ -28,6 +43,9 @@ export const BannerButton = styled.div`
   margin-top: 30px;
   display: inline-block;
   padding: 10px 62px;
+  @media (max-width: 595px) {
+    padding: 20px 62px;
+  }
   background: #ffe9da;
   box-shadow: 7px 4px 6px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
@@ -57,6 +75,12 @@ export const BannerContent = styled.div`
   padding-top: 83px;
   display: flex;
   flex-direction: column;
+  @media (max-width: 595px) {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -66,6 +90,12 @@ export const LogoContainer = styled.div`
 
   span {
     margin-left: 87px;
+    @media (max-width: 595px) {
+      margin-left: 5px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+    }
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;

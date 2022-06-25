@@ -23,6 +23,7 @@ function Hire() {
           display: "flex",
           flexDirection: "column",
           rowGap: "20px",
+          px: { xs: 1, md: 0 },
         }}
         component="form"
         autoComplete="off"
@@ -57,7 +58,7 @@ function Hire() {
         />
         <Box
           sx={{
-            mt: 2,
+            my: 2,
             display: "flex",
             justifyContent: "flex-end",
             maxWidth: "600px",

@@ -11,12 +11,13 @@ const PageTitle = ({ title, SVGIcon, ...otherProps }) => {
       <Typography
         variant="h2"
         sx={{
-          fontWeight: 400,
-          fontSize: "34px",
-          lineHeight: "39.8px",
+          fontWeight: 500,
+          fontSize: { xs: "20px", md: "34px" },
+          lineHeight: { xs: "23px", md: "39.8px" },
           letterSpacing: "0.0025em",
           color: "#D7B6A0",
           mr: 1,
+          pl: 2,
         }}
       >
         {title}
