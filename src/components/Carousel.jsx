@@ -14,6 +14,7 @@ const NextArrow = ({ className, style, onClick }) => {
         width: "auto",
         height: "auto",
         display: { xs: "none" },
+        "@media (maxWidth: 595px)": { display: "none" },
         // display: "inline-block",
         zIndex: 1000,
         "&::before": {
@@ -43,7 +44,7 @@ const PrevArrow = ({ className, style, onClick }) => {
         style={{
           width: "24px",
           height: "24px",
-          "@media (max-width: 595px)": { display: "none" },
+          "@media (maxWidth: 595px)": { display: "none" },
         }}
       />
     </Box>

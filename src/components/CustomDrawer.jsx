@@ -25,7 +25,7 @@ const CustomDrawer = ({ state, toggleDrawer }) => {
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
     >
-      <Box sx={{ alignSelf: "flex-end", pr: 2 }}>
+      <Box sx={{ alignSelf: "flex-end", pr: 2, mt: 2 }}>
         <ChevronLeftIcon onClick={toggleDrawer(false)} />
       </Box>
       <List
@@ -63,7 +63,12 @@ const CustomDrawer = ({ state, toggleDrawer }) => {
     </Box>
   );
   return (
-    <Drawer anchor="left" open={state} onClose={toggleDrawer(false)}>
+    <Drawer
+      anchor="left"
+      open={state}
+      onClose={toggleDrawer(false)}
+      sx={{ zIndex: 5000 }}
+    >
       {list()}
     </Drawer>
   );

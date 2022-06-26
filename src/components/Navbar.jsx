@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Box, Container, Typography } from "@mui/material";
 import { MenuItem } from "./NavbarStyles";
 import { useNavigate } from "react-router-dom";
@@ -7,6 +7,18 @@ import CustomDrawer from "./CustomDrawer";
 
 function Navbar() {
   const [drawerState, setDrawerState] = useState(false);
+  const [bounded, setBounded] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 140) {
+      setBounded(true);
+    } else {
+      setBounded(false);
+    }
+  };
   const toggleDrawer = (open) => (event) => {
     if (
       event.type === "keydown" &&
@@ -17,12 +29,19 @@ function Navbar() {
     setDrawerState(open);
   };
   const navigate = useNavigate();
+
   return (
     <Box
       sx={{
         height: { xs: "55px", md: "95px" },
         backgroundColor: "#6D5C5C",
         display: "flex",
+        position: bounded ? "fixed" : "static",
+        zIndex: 4000,
+        width: bounded ? "100vw" : "auto",
+        opacity: bounded ? 0.99 : 1,
+        left: bounded ? 0 : "none",
+        top: bounded ? 0 : "none",
       }}
     >
       <Container
