@@ -99,7 +99,7 @@ function Homepage() {
               fontSize: "24px",
               lineHeight: "28px",
               color: "#D7B6A0",
-              textAlign: "center",
+              textAlign: { xs: "center", md: "left" },
             }}
           >
             I will help you with finding a solution and solve your problem.
