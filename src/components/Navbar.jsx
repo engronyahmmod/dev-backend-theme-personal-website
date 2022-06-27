@@ -86,6 +86,7 @@ function Navbar() {
           <MenuItem onClick={() => navigate("/platforms")}>PLATFORMS</MenuItem>
           <MenuItem onClick={() => navigate("/reviews")}>REVIEWS</MenuItem>
           <MenuItem onClick={() => navigate("/hire")}>HIRE</MenuItem>
+          <MenuItem onClick={() => navigate("/login")}>LOGIN</MenuItem>
         </Box>
       </Container>
     </Box>

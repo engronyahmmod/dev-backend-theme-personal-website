@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Button, TextField } from "@mui/material";
 import PageTitle from "../components/PageTitle";
 import { useFormik } from "formik";
+import { hireMe } from "../firebase/firebase.utils";
 
 function Hire() {
   const formik = useFormik({
@@ -11,7 +12,9 @@ function Hire() {
       description: "",
     },
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      hireMe(values).then((res) => {
+        console.log(res);
+      });
     },
   });
   return (

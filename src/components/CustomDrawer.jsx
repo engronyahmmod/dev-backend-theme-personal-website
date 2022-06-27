@@ -33,7 +33,7 @@ const CustomDrawer = ({ state, toggleDrawer }) => {
           pl: 3,
         }}
       >
-        {["HOME", "ALL PROJECTS", "PLATFORMS", "REVIEWS", "HIRE"].map(
+        {["HOME", "ALL PROJECTS", "PLATFORMS", "REVIEWS", "HIRE", "LOGIN"].map(
           (text, index) => (
             <ListItem
               key={index}

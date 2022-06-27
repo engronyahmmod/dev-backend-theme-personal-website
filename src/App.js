@@ -8,6 +8,7 @@ import Platforms from "./pages/Platforms";
 import Reviews from "./pages/Reviews";
 import Hire from "./pages/Hire";
 import { Alert } from "@mui/material";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/platforms" element={<Platforms />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/hire" element={<Hire />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </LayoutWraper>
       <Footer />
