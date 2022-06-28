@@ -15,8 +15,8 @@ body {
 }
 }
 
-@media (max-width) {
+/* @media (max-width: 595px) {
 body {
   overflow-x: hidden;
 }
-}
+} */

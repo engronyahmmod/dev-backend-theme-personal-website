@@ -2,7 +2,7 @@ import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 
 export const loginWithGoogle = () => {
   const provider = new GoogleAuthProvider();
-  provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
+  //   provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
   const auth = getAuth();
   auth.languageCode = "it";
 
