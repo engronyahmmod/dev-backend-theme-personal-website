@@ -19,11 +19,11 @@ export const hireMe = async (data) => {
 
 export const createUserWhoIsLoggedIn = async (user) => {
   if (Boolean(user)) {
-    console.log(user);
+    // console.log(user);
     const docRef = doc(db, "users", user.uid);
     const docSnap = await getDoc(docRef);
     if (docSnap.exists()) {
-      console.log("User exists", docSnap.data());
+      // console.log("User exists", docSnap.data());
       return;
     } else {
       await setDoc(doc(db, "users", user.uid), user);
