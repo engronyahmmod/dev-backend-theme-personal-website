@@ -13,6 +13,10 @@ import React from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import AuthContext from "./contexts/authContext";
 import { createUserWhoIsLoggedIn } from "./firebase/firebase.utils";
+import NotFound from "./pages/404";
+import RequireAuth from "./components/RequireAuth";
+import Me from "./pages/Me";
+import AlreadyLoggedIn from "./components/AlreadyLoggedIn";
 
 class App extends React.Component {
   constructor(props) {
@@ -64,7 +68,23 @@ class App extends React.Component {
               <Route path="/platforms" element={<Platforms />} />
               <Route path="/reviews" element={<Reviews />} />
               <Route path="/hire" element={<Hire />} />
-              <Route path="/login" element={<Login />} />
+              <Route
+                path="/me"
+                element={
+                  <RequireAuth>
+                    <Me />
+                  </RequireAuth>
+                }
+              />
+              <Route
+                path="/login"
+                element={
+                  <AlreadyLoggedIn>
+                    <Login />
+                  </AlreadyLoggedIn>
+                }
+              />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </LayoutWraper>
           <Footer />

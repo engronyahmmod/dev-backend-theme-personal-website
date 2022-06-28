@@ -58,10 +58,24 @@ function Footer() {
             /* Gray-4 */
 
             color: "#6D5C5C",
+            boxShadow: 1,
+            p: 1,
           }}
         >
-          This site is designed and maintained by Md. Rony Ahmmod. Copyright ©
-          2022{" "}
+          This site is designed and maintained by{" "}
+          <Typography
+            component="span"
+            sx={{
+              color: "#729AB1",
+              textTransform: "uppercase",
+              fontSize: "14px",
+              fontWeight: "bold",
+              textDecoration: "underline",
+            }}
+          >
+            Eng. Md. Rony Ahmmod
+          </Typography>
+          . Copyright © 2022{" "}
         </Typography>
       </Container>
     </Box>

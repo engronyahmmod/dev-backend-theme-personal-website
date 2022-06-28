@@ -183,7 +183,7 @@ function Navbar() {
                       transformOrigin={{ horizontal: "right", vertical: "top" }}
                       anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
                     >
-                      <MenuItem>
+                      <MenuItem onClick={() => navigate("/me")}>
                         <Avatar /> Profile
                       </MenuItem>
                       <MenuItem>
