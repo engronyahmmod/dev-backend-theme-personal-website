@@ -17,6 +17,7 @@ import NotFound from "./pages/404";
 import RequireAuth from "./components/RequireAuth";
 import Me from "./pages/Me";
 import AlreadyLoggedIn from "./components/AlreadyLoggedIn";
+import Profile from "./pages/Profile";
 
 class App extends React.Component {
   constructor(props) {
@@ -84,6 +85,10 @@ class App extends React.Component {
                   </AlreadyLoggedIn>
                 }
               />
+              <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>}>
+                <Route index  element={<h1>Reviews</h1>} />
+                <Route path="update" element={<h1>Update</h1>} />
+              </Route>
               <Route path="*" element={<NotFound />} />
             </Routes>
           </LayoutWraper>

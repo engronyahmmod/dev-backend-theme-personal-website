@@ -16,7 +16,7 @@ const NotFound = () => {
       }}
     >
       <Typography variant="h1" component="div">
-        404. Page Not Found. 😥
+        404. Page Not Found. <span role="img" aria-label="emoji">😥</span>
       </Typography>
     </Box>
   );

@@ -5,8 +5,9 @@ import { Navigate, useLocation } from "react-router-dom";
 const AlreadyLoggedIn = ({ children }) => {
   const currentUser = useContext(AuthContext);
   const location = useLocation();
+  console.log(location);
   if (currentUser) {
-    return <Navigate to="/me" state={{ from: location }} replace />;
+    return <Navigate to={location.state.from.pathname} state={{ from: location }} replace />;
   } else {
     return children;
   }

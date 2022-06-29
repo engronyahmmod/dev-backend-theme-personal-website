@@ -32,13 +32,13 @@ function Footer() {
             padding: { xs: 2, md: 0 },
           }}
         >
-          <a href="https://www.facebook.com/rony.ahmmod.9/" target="_blank">
+          <a href="https://www.facebook.com/rony.ahmmod.9/" target="_blank" rel="noopener noreferrer">
             <FbLogo />
           </a>
-          <a href="https://twitter.com/MDRONYAHMMOD" target="_blank">
+          <a href="https://twitter.com/MDRONYAHMMOD" target="_blank" rel="noopener noreferrer">
             <TwitterLogo />
           </a>
-          <a href="https://github.com/ronyahmmod" target="_blank">
+          <a href="https://github.com/ronyahmmod" target="_blank" rel="noopener noreferrer">
             <GithubLogo />
           </a>
         </Box>

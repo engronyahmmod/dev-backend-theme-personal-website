@@ -433,7 +433,7 @@ function Homepage() {
             color: "#D7B6A0",
           }}
         >
-          Let’s make something amzing together start by saying Hi 😀
+          Let’s make something amzing together start by saying Hi <span role="img" aria-label="emoji">😀</span>
         </Typography>
       </Box>
       {/* ------ end banner 3 */}

@@ -186,7 +186,7 @@ function Navbar() {
                       <MenuItem onClick={() => navigate("/me")}>
                         <Avatar /> Profile
                       </MenuItem>
-                      <MenuItem>
+                      <MenuItem onClick={() => navigate("/profile")}>
                         <Avatar /> My account
                       </MenuItem>
                       <Divider />
