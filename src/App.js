@@ -85,8 +85,15 @@ class App extends React.Component {
                   </AlreadyLoggedIn>
                 }
               />
-              <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>}>
-                <Route index  element={<h1>Reviews</h1>} />
+              <Route
+                path="/profile"
+                element={
+                  <RequireAuth>
+                    <Profile />
+                  </RequireAuth>
+                }
+              >
+                <Route index element={<h1>Reviews</h1>} />
                 <Route path="update" element={<h1>Update</h1>} />
               </Route>
               <Route path="*" element={<NotFound />} />
